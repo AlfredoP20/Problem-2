@@ -1,0 +1,16 @@
+void printSquares(int n)
+{
+    // Initialize 'square' and previous value of 'x'
+    int square = 0, prev_x = 0;
+ 
+    // Calculate and print squares
+    for (int x = 0; x < n; x++)
+    {
+        // Update value of square using previous value
+        square = (square + x + prev_x);
+ 
+        // Print square and update prev for next iteration
+        cout << square << " ";
+        prev_x = x;
+    }
+}
